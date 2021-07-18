@@ -1,0 +1,12 @@
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.btn{
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}

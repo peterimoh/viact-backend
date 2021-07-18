@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/photo.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<center style="margin: 15px;">
+    <small class="tc-default" style="color: green">
+    <%if(error){%>
+    <%=error%>
+    <%}%>   
+    </small>
+
+</center>
+<body>
+    <div class="upload_photo">
+       <form action="/upload" class="form-control" enctype="multipart/form-data" method="POST" >
+        <div class="form-group">
+          <input type="file" required="required" name="profile" />
+          <input type="hidden" value="imgURL" name="package" />
+        </div>
+        <div class="form-group">
+        
+        </div><br/>
+
+          <button type="submit" style=""> Upload </button>
+
+          <br/>
+          <br/>
+          <br/>
+          <a href="/logout" class="btn">Logout</a>
+     
+      </form>
+    </div>
+</body>
+</html>

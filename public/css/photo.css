@@ -1,0 +1,10 @@
+.upload_photo{
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+    border: solid 1px rgb(99, 99, 99);
+    padding: 100px;
+}
